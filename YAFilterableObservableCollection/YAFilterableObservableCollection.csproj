@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45;net6.0;net7.0</TargetFrameworks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Description>Implements an observable collection with a filter predicate, where
+changes in the filter, added or removed items are observable.
+Meant to be used as a collection in WPF or Maui UI lists with search or filter capabilities.
+Items in the collection are stored as they are, ObservableCollection.Items is
+maintained with items matching the filter.</Description>
+    <Copyright>2023 Balint Nagy</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/balintn22/FilterableObservableCollection</RepositoryUrl>
+    <PackageTags>Filtered Filterable ObservableCollection</PackageTags>
+    <PackageReleaseNotes>Initial implementation.</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
