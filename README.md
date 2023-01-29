@@ -5,6 +5,8 @@ Meant to be used as a collection in WPF or Maui UI lists with search or filter c
 Items in the collection are stored as they are, ObservableCollection.Items is
 maintained with items matching the filter.
 
+Available as nuget package YAFilterableObservableCollection.
+
 Example
 
     public class MyViewModel : BaseViewModel
